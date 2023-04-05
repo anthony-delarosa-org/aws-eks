@@ -1,4 +1,4 @@
-This assumes you have Terraform installed andd kubectl.
+This assumes you have Terraform installed and kubectl installed. It also assumes you have Terraform Cloud Account setup (API Key already in Env) and that you already created the workspace name in the __config.tf__ file. In that workspace in Terraform Clou you will need to change the _Exectution Mode_ from _Remote_ to _Local_
 
 This will provision an EKS Fargate Cluster with on demand Fargate Nodes in  US West 2 Oregon. In order to create it in another region you'd need to change a few things.
 
