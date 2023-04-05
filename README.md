@@ -8,10 +8,10 @@ $ export KUBE_CONFIG_PATH=~/.kube/config
 
 Then run 
 
-$ terraform init  
-$ terraform validate  
-$ terraform plan   
-$ terraform apply  
+$ terraform init\
+$ terraform validate\  
+$ terraform plan\   
+$ terraform apply\  
 
 If you still get Helm Auth Errors, run the following command to connect to the EKS Farget Cluster via kubectl. 
 
