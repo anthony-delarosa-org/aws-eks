@@ -6,13 +6,20 @@ You will need to pass in your AWS CLI Profile name in the  _config.tf file. If y
 
 $ export KUBE_CONFIG_PATH=~/.kube/config
 
+Then run 
+
+$ terraform init
+$ terraform validate
+$ terraform plan 
+$ terraform apply
+
 If you still get Helm Auth Errors, run the following command to connect to the EKS Farget Cluster via kubectl. 
 
 $ aws eks update-kubeconfig --name eks-demo --region us-west-2 --profile <YOUR_PROFILE_NAME>
 
 Check if Nodes are up
 
-$ kubectl get nodes -o widde
+$ kubectl get nodes -o wide
 
 If you get Status = Ready on all Worker Nodes you can apply 
 
