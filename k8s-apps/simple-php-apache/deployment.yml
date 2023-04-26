@@ -22,7 +22,6 @@ spec:
       containers:
       - name: php-apache
         image: 974013732821.dkr.ecr.ca-central-1.amazonaws.com/hello-nginx:latest
-        image: k8s.gcr.io/hpa-example
         ports:
         - containerPort: 80
         resources:
